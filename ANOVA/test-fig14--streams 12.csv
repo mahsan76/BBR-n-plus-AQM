@@ -1,0 +1,15 @@
+Anova: Single Factor,,,,,,
+,,,,,,
+SUMMARY,,,,,,
+Groups,Count,Sum,Average,Variance,,
+Ping (ms) ICMP - Cubic,348,1102875.08,3169.181264,4167871.245,,
+Ping (ms) ICMP - BBR-v3,348,1350485.476,3880.705391,7977993.975,,
+Ping (ms) ICMP - BBR-n+,356,704252.7391,1978.238031,1123480.94,,
+,,,,,,
+,,,,,,
+ANOVA,,,,,,
+Source of Variation,SS,df,MS,F,P-value,F crit
+Between Groups,651544614.8,2,325772307.4,74.07364964,8.09716E-31,3.004303792
+Within Groups,4613450965,1049,4397951.349,,,
+,,,,,,
+Total,5264995580,1051,,,,

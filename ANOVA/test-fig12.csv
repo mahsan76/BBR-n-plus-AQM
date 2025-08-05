@@ -1,0 +1,15 @@
+Anova: Single Factor,,,,,,
+,,,,,,
+SUMMARY,,,,,,
+Groups,Count,Sum,Average,Variance,,
+TCP upload sum - Cubic,271,6302.321025,23.25579714,189.7654588,,
+TCP upload sum - BBR-v3,301,9454.812938,31.41133867,248.016284,,
+TCP upload sum - BBR-n+,292,12351.36612,42.29919903,381.567837,,
+,,,,,,
+,,,,,,
+ANOVA,,,,,,
+Source of Variation,SS,df,MS,F,P-value,F crit
+Between Groups,51553.27884,2,25776.63942,93.77172923,1.4335E-37,3.006179736
+Within Groups,236677.7996,861,274.8871076,,,
+,,,,,,
+Total,288231.0785,863,,,,
