@@ -1,0 +1,14 @@
+“BBR Bandwidth Plateau Exit”
+###########################################################
+bw_thresh = (u64)bbrn->full_bw * bbrn_full_bw_thresh >> BBR_SCALE;
+      rtt_diff = current_rtt - min_rtt;
+      if (bbrn_max_bw(sk) < bw_thresh && rtt_diff > 5000) {
+            ++bbrn->full_bw_cnt;
+      } else {
+            bbrn->full_bw = bbrn_max_bw(sk);
+            bbrn->full_bw_cnt = 0;
+      }
+      bbrn->full_bw_reached = bbrn->full_bw_cnt >= bbrn_full_bw_cnt;
+#################################################################
+
+Where current_rtt is simply tp->srtt_us >> 3

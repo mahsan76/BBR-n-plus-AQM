@@ -1,0 +1,19 @@
+#!/bin/bash
+# Config
+RECEIVER_IP="192.168.1.2"
+RWND="65536"  # 64 KB
+
+# Set RWND limit
+sysctl -w net.ipv4.tcp_rmem="4096 $RWND 6291456"
+
+# Test standard BBRv3
+sysctl -w net.ipv4.tcp_congestion_control=bbr
+iperf3 -c $RECEIVER_IP -t 60 -J > bbr_std.json
+
+# Test your modified BBR
+sysctl -w net.ipv4.tcp_congestion_control=bbr_mod
+iperf3 -c $RECEIVER_IP -t 60 -J > bbr_mod.json
+
+# Compare
+echo "Standard BBRv3 Throughput: $(jq '.end.sum_received.bits_per_second' bbr_std.json)"
+echo "Your Algorithm Throughput: $(jq '.end.sum_received.bits_per_second' bbr_mod.json)"
