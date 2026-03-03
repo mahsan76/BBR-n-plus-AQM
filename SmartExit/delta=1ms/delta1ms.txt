@@ -1,0 +1,57 @@
+Starting Flent 2.0.1 using Python 3.9.5.
+
+Summary of tcp_1up test run from 2026-03-01 08:05:59.168445
+  Title: 'BBR-v3 Delta=1ms,RWND=128KB'
+
+                           avg       median          # data pts
+ Ping (ms) ICMP :        74.60        87.10 ms              349
+ TCP upload     :        94.68        94.86 Mbits/s         349
+
+Summary of tcp_1up test run from 2026-03-01 08:11:47.427305
+  Title: 'BBR-n+ Delta=1ms,RWND=128KB'
+
+                           avg       median          # data pts
+ Ping (ms) ICMP :        75.70        87.75 ms              350
+ TCP upload     :        94.80        94.86 Mbits/s         350
+
+Summary of tcp_1up test run from 2026-03-01 08:20:44.644331
+  Title: 'BBR-v3, Delta=1ms, RWND=64KB'
+
+                           avg       median          # data pts
+ Ping (ms) ICMP :        23.10        18.85 ms              350
+ TCP upload     :        10.31        11.08 Mbits/s         350
+
+Summary of tcp_1up test run from 2026-03-01 08:23:00.421923
+  Title: 'BBR-n+, Delta=1ms, RWND=64KB'
+
+                           avg       median          # data pts
+ Ping (ms) ICMP :        19.85        16.55 ms              348
+ TCP upload     :        11.92        12.31 Mbits/s         349
+
+Summary of tcp_1up test run from 2026-03-01 08:26:14.336758
+  Title: 'BBR-v3, Delta=1ms, RWND=32KB'
+
+                           avg       median          # data pts
+ Ping (ms) ICMP :        11.20         9.57 ms              350
+ TCP upload     :         9.55         9.86 Mbits/s         350
+
+Summary of tcp_1up test run from 2026-03-01 08:27:53.736147
+  Title: 'BBR-n+, Delta=1ms, RWND=32KB'
+
+                           avg       median          # data pts
+ Ping (ms) ICMP :        10.40         9.26 ms              350
+ TCP upload     :        10.71        10.91 Mbits/s         350
+
+Summary of tcp_1up test run from 2026-03-01 08:29:52.204628
+  Title: 'BBR-v3, Delta=1ms, RWND=16KB'
+
+                           avg       median          # data pts
+ Ping (ms) ICMP :         9.78         7.08 ms              349
+ TCP upload     :         5.34         5.49 Mbits/s         349
+
+Summary of tcp_1up test run from 2026-03-01 08:31:28.452554
+  Title: 'BBR-n+, Delta=1ms, RWND=16KB'
+
+                           avg       median          # data pts
+ Ping (ms) ICMP :        13.85         8.46 ms              347
+ TCP upload     :         4.71         5.70 Mbits/s         349
